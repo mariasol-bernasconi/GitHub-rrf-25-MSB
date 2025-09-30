@@ -9,6 +9,10 @@ Welcome to the DIME Analytics training on GitHub and reproducible workflows. Ove
 
 This repository will serve as your workspace throughout the entire training. Follow the steps outlined below to set up your environment. Once set up, you will continue to work on this repository for the remainder of the sessions.
 
+## Performing Task 2
+
+Do Task 2
+
 ## Project Overview
 
 You will use this repository locally for the rest of the training, so it is crucial to follow the instructions to import the repository to your machine. We will guide you step by step in the "Using GitHub for Collaborative Research" training, but the instructions are also provided below in case you miss any part.
