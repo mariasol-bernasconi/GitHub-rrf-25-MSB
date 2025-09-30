@@ -3,16 +3,16 @@
 *******************************************************************************/
 
 	* Set version
-	*version ???
+	version 18.5
 
 	* Set project global(s)	
 	// User: you 
 	display "`c(username)'" 	//Check username and copy to set project globals by user
 	
 	* Add file paths to DataWork folder and the Github folder for RRF2024
-	if "`c(username)'" == "" {
-        *global onedrive "???/DataWork"
-		global github 	"???/GitHub-rrf-24"
+	if "`c(username)'" == "wb639639" {
+        global onedrive "C:\Users\wb639639\OneDrive - WBG\Desktop\Transparent and Credible Analytics [September 2025]\DataWork"
+		global github 	"C:\Users\wb639639\Downloads\GitHub-rrf-25-MSB"
     }
 	
 	
@@ -21,7 +21,7 @@
 	global code 	"${github}/Stata/Code"
 	global outputs 	"${github}/Stata/Outputs"
 	
-	sysdir set PLUS "???"
+	sysdir set PLUS "${code}/ado"
 
 
 	* Install packages 
@@ -33,7 +33,7 @@
 		   ssc install `command'
 	   }
 	}
-
+	
 	* Run do files 
 	* Switch to 0/1 to not-run/run do-files 
 	if (0) do "${code}/01-processing-data.do"
